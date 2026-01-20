@@ -18,6 +18,9 @@ with st.sidebar:
         st.session_state.messages = []
         st.rerun()
 
+    st.divider()
+    st.link_button("💬 Chat on WhatsApp", "https://wa.me/15551836350", use_container_width=True)
+
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
